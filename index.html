@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA Keuzeportaal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        .login-button {
+            background-color: #0078d4;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .login-button.itsme {
+            background-color: #ff6f00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kies uw aanmeldmethode</h1>
+    <button class="login-button" onclick="location.href='https://login.microsoftonline.com'">Login met Microsoft</button>
+    <button class="login-button itsme" onclick="location.href='https://your-itsme-function-url/callback'">Login met itsme</button>
+</body>
+</html>
